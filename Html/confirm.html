@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Your Details – Care Circle</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="logo-area">
+            <h1>Care Circle</h1>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find.html">Find a Nanny</a></li>
+                <li><a href="activities.html">Local Activities</a></li>
+                <li><a href="about.html">How It Works</a></li>
+                <li><a href="connect.html">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section aria-labelledby="confirm-heading">
+            <h2 id="confirm-heading">Please review your details</h2>
+            <p>
+                This page shows a summary of the information you shared. In a full build, this would be 
+                using JavaScript.
+            </p>
+
+            <p><strong>Note:</strong> For the GP3 alpha build  this page show placeholder data or basic query-string output. and will add new features in upcoming week.</p>
+
+            
+            <dl>
+                <dt>Your role</dt>
+                <dd id="summary-role">[role goes here]</dd>
+
+                <dt>Full name</dt>
+                <dd id="summary-name">[name goes here]</dd>
+
+                <dt>Email</dt>
+                <dd id="summary-email">[email goes here]</dd>
+
+                <dt>City or neighborhood</dt>
+                <dd id="summary-city">[city goes here]</dd>
+
+                <dt>Number of children</dt>
+                <dd id="summary-children">[children goes here]</dd>
+
+                <dt>Child age range</dt>
+                <dd id="summary-ageRange">[age range goes here]</dd>
+
+                <dt>Preferred schedule</dt>
+                <dd id="summary-schedule">[schedule goes here]</dd>
+
+                <dt>Additional notes</dt>
+                <dd id="summary-notes">[notes go here]</dd>
+            </dl>
+        </section>
+
+        <section aria-labelledby="json-heading">
+            <h2 id="json-heading">Form data as JSON (prototype)</h2>
+            <p>
+                The requirement says the data should be saved to JSON. For this alpha version, your team’s JavaScript 
+                can convert the form fields into a JSON object and display it here.
+            </p>
+            <pre id="form-json">
+{
+    "role": "[role]",
+    "name": "[name]",
+    "email": "[email]",
+    "city": "[city]",
+    "children": "[children]",
+    "ageRange": "[ageRange]",
+    "schedule": "[schedule]",
+    "notes": "[notes]",
+    "updates": "[yes/no]"
+}
+            </pre>
+        </section>
+
+        <section aria-labelledby="next-step-heading">
+            <h2 id="next-step-heading">Next step</h2>
+            <p>
+                If everything looks correct, continue to the thank you page. If you need to make changes, 
+                you can go back to the form.
+            </p>
+            <p>
+                <a href="connect.html">⬅ Go back and edit</a> |
+                <a href="thankyou.html">Continue to thank you page ➜</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Care Circle – ByteBakers Team</p>
+    </footer>
+</body>
+</html>
