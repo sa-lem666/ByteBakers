@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Nanny – Care Circle</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="logo-area">
+            <h1>Care Circle</h1>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find.html" aria-current="page">Find a Nanny</a></li>
+                <li><a href="activities.html">Local Activities</a></li>
+                <li><a href="about.html">How It Works</a></li>
+                <li><a href="connect.html">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section aria-labelledby="find-heading">
+            <h2 id="find-heading">Find a nanny near you</h2>
+            <p>
+                Explore sample nanny profiles to see how Care Circle can help families connect with 
+                trusted caregivers in the Seattle region.
+            </p>
+
+            <form aria-label="Filter nannies">
+                <fieldset>
+                    <legend>Filter by location and preferences</legend>
+                    <label for="location-input">City or ZIP code</label>
+                    <input id="location-input" name="location" type="text" placeholder="e.g., Bellevue or 98007" />
+
+                    <label for="experience-input">Minimum years of experience</label>
+                    <input id="experience-input" name="experience" type="number" min="0" />
+
+                    <label for="availability-select">Availability</label>
+                    <select id="availability-select" name="availability">
+                        <option value="">Any</option>
+                        <option value="weekday-mornings">Weekday mornings</option>
+                        <option value="weekday-evenings">Weekday evenings</option>
+                        <option value="weekends">Weekends</option>
+                    </select>
+
+                    <button type="submit">Apply filters (prototype only)</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section aria-labelledby="profiles-heading">
+            <h2 id="profiles-heading">Sample nanny profiles</h2>
+
+            <article class="nanny-card">
+                <h3>Alexis Park <span aria-label="Verified nanny">✔</span></h3>
+                <p><strong>Location:</strong> Bellevue, WA</p>
+                <p><strong>Experience:</strong> 5+ years with toddlers and elementary-aged kids</p>
+                <p><strong>Hourly rate:</strong> $25–$30/hr</p>
+                <p><strong>Availability:</strong> Weekday evenings, weekends</p>
+                <p>
+                    Alexis is CPR certified and has worked with families new to the Seattle area. 
+                    She focuses on routines, homework help, and outdoor play.
+                </p>
+                <p><a href="connect.html">I’m interested in a nanny like Alexis</a></p>
+            </article>
+
+            <article class="nanny-card">
+                <h3>Amina Kiba <span aria-label="Verified nanny">✔</span></h3>
+                <p><strong>Location:</strong> Seattle, WA</p>
+                <p><strong>Experience:</strong> 3 years, part-time student caregiver</p>
+                <p><strong>Hourly rate:</strong> $22–$26/hr</p>
+                <p><strong>Availability:</strong> Weekday afternoons, some weekends</p>
+                <p>
+                    Amina is a college student studying early childhood education and enjoys 
+                    planning creative, screen-free activities for kids.
+                </p>
+                <p><a href="connect.html">I’m interested in a nanny like Amina</a></p>
+            </article>
+
+            <article class="nanny-card">
+                <h3>Jordan Lee</h3>
+                <p><strong>Location:</strong> Kirkland, WA</p>
+                <p><strong>Experience:</strong> 7 years, including infants</p>
+                <p><strong>Hourly rate:</strong> $28–$32/hr</p>
+                <p><strong>Availability:</strong> Full-time weekdays</p>
+                <p>
+                    Jordan has supported families with newborns and twins and focuses on safe, 
+                    calm environments with consistent routines.
+                </p>
+                <p><a href="connect.html">I’m interested in a nanny like Jordan</a></p>
+            </article>
+        </section>
+
+        <section aria-labelledby="safety-heading">
+            <h2 id="safety-heading">Safety and trust</h2>
+            <p>
+                In a full system, Care Circle would integrate background checks (for example, using APIs like Checkr), 
+                identity verification, and a community review and rating system.
+            </p>
+            <p>
+                This prototype focuses on the user experience and layout. All profiles here are sample data.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Care Circle – ByteBakers Team</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>
