@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0b3a4a;
+    background: #f4fbfb;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #007d85;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover,
+a:focus {
+    color: #005461;
+    text-decoration: underline;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    padding: 0.5rem 1rem;
+    background: #00bfa5;
+    color: #ffffff;
+    border-radius: 999px;
+    z-index: 10;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.75rem;
+}
+
+header {
+    background: #ffffff;
+    border-bottom: 2px solid #007d85;
+}
+
+header .logo-area {
+    text-align: center;
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+header .logo-area h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #006173;
+}
+
+header .logo-area .tagline {
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+    color: #317889;
+}
+
+nav {
+    padding: 0 1rem 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+}
+
+nav a {
+    padding: 0.35rem 0;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    color: #006173;
+}
+
+nav a[aria-current="page"] {
+    border-bottom-color: #00bfa5;
+    color: #004653;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.75rem 1.125rem 2.5rem;
+}
+
+section {
+    margin-bottom: 2.25rem;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.5rem 1.25rem;
+    border: 1px solid #d1ecec;
+}
+
+h2 {
+    margin-top: 0;
+    color: #005461;
+    font-size: 1.4rem;
+}
+
+h3 {
+    margin-top: 0.5rem;
+    color: #006f72;
+    font-size: 1.1rem;
+}
+
+p {
+    margin: 0.35rem 0 0.75rem;
+}
+
+ul,
+ol {
+    padding-left: 1.25rem;
+    margin: 0.5rem 0 0.75rem;
+}
+
+figure {
+    margin: 1rem 0 0;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #4f7e8a;
+}
+
+form {
+    margin-top: 0.75rem;
+}
+
+fieldset {
+    border: 1px solid #c4e4e4;
+    border-radius: 14px;
+    padding: 1rem 1.1rem 1.25rem;
+    margin: 0 0 1.25rem;
+}
+
+legend {
+    padding: 0 0.4rem;
+    font-weight: 600;
+    color: #005461;
+}
+
+label {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    margin-top: 0.35rem;
+    padding: 0.55rem 0.65rem;
+    border-radius: 10px;
+    border: 1px solid #b9e2e2;
+    font: inherit;
+    background: #f8fdfd;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #00bfa5;
+    outline-offset: 2px;
+    border-color: #00bfa5;
+    background: #ffffff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.35rem;
+}
+
+button,
+input[type="submit"] {
+    margin-top: 0.75rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    border: none;
+    background: #00bfa5;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background: #009480;
+}
+
+.nanny-card {
+    border-radius: 16px;
+    border: 1px solid #c4e4e4;
+    padding: 1.25rem 1.2rem 1.35rem;
+    margin-bottom: 1.25rem;
+    background: #f9fefe;
+}
+
+.nanny-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nanny-card span {
+    font-size: 1rem;
+    color: #00bfa5;
+}
+
+dl {
+    margin: 0.5rem 0 0;
+}
+
+dt {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: #005461;
+}
+
+dd {
+    margin: 0.1rem 0 0.4rem;
+}
+
+pre {
+    padding: 0.75rem 0.9rem;
+    background: #0b3a4a;
+    color: #e5feff;
+    border-radius: 12px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+}
+
+footer {
+    border-top: 2px solid #007d85;
+    background: #ffffff;
+    padding: 1.25rem 1rem 1.75rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #376c7a;
+}
+
+footer a {
+    font-weight: 500;
+}
+
+@media (min-width: 720px) {
+    header {
+        padding: 0.75rem 1.5rem 1rem;
+    }
+
+    header .logo-area {
+        text-align: left;
+        padding: 0.5rem 0;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    nav {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0.25rem 0 1rem;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    main {
+        padding-top: 2.25rem;
+    }
+}
