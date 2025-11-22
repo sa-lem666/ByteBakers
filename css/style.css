@@ -1,3 +1,25 @@
+/* =========================================================
+   1. CSS VARIABLES (Optional — same values as your design)
+   ========================================================= */
+:root {
+    --color-primary: #00bfa5;
+    --color-primary-dark: #009480;
+    --color-link: #007d85;
+    --color-link-hover: #005461;
+    --color-text: #0b3a4a;
+    --color-bg: #f4fbfb;
+    --color-section-bg: #ffffff;
+    --color-border: #d1ecec;
+    --color-header-border: #007d85;
+    --color-heading: #005461;
+    --color-subheading: #006f72;
+}
+
+
+
+/* =========================================================
+   2. RESET & BASE STYLES
+   ========================================================= */
 * {
     box-sizing: border-box;
 }
@@ -7,8 +29,8 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #0b3a4a;
-    background: #f4fbfb;
+    color: var(--color-text);
+    background: var(--color-bg);
 }
 
 img {
@@ -18,23 +40,28 @@ img {
 }
 
 a {
-    color: #007d85;
+    color: var(--color-link);
     text-decoration: none;
     font-weight: 500;
 }
 
 a:hover,
 a:focus {
-    color: #005461;
+    color: var(--color-link-hover);
     text-decoration: underline;
 }
 
+
+
+/* =========================================================
+   3. ACCESSIBILITY COMPONENTS
+   ========================================================= */
 .skip-link {
     position: absolute;
     left: -9999px;
     top: 0;
     padding: 0.5rem 1rem;
-    background: #00bfa5;
+    background: var(--color-primary);
     color: #ffffff;
     border-radius: 999px;
     z-index: 10;
@@ -46,9 +73,14 @@ a:focus {
     margin-top: 0.75rem;
 }
 
+
+
+/* =========================================================
+   4. HEADER & NAVIGATION
+   ========================================================= */
 header {
-    background: #ffffff;
-    border-bottom: 2px solid #007d85;
+    background: var(--color-section-bg);
+    border-bottom: 2px solid var(--color-header-border);
 }
 
 header .logo-area {
@@ -94,10 +126,15 @@ nav a {
 }
 
 nav a[aria-current="page"] {
-    border-bottom-color: #00bfa5;
+    border-bottom-color: var(--color-primary);
     color: #004653;
 }
 
+
+
+/* =========================================================
+   5. MAIN LAYOUT & SECTIONS
+   ========================================================= */
 main {
     max-width: 960px;
     margin: 0 auto;
@@ -106,21 +143,26 @@ main {
 
 section {
     margin-bottom: 2.25rem;
-    background: #ffffff;
+    background: var(--color-section-bg);
     border-radius: 18px;
     padding: 1.5rem 1.25rem;
-    border: 1px solid #d1ecec;
+    border: 1px solid var(--color-border);
 }
 
+
+
+/* =========================================================
+   6. TYPOGRAPHY
+   ========================================================= */
 h2 {
     margin-top: 0;
-    color: #005461;
+    color: var(--color-heading);
     font-size: 1.4rem;
 }
 
 h3 {
     margin-top: 0.5rem;
-    color: #006f72;
+    color: var(--color-subheading);
     font-size: 1.1rem;
 }
 
@@ -143,6 +185,11 @@ figcaption {
     color: #4f7e8a;
 }
 
+
+
+/* =========================================================
+   7. FORMS & INPUTS
+   ========================================================= */
 form {
     margin-top: 0.75rem;
 }
@@ -157,7 +204,7 @@ fieldset {
 legend {
     padding: 0 0.4rem;
     font-weight: 600;
-    color: #005461;
+    color: var(--color-heading);
 }
 
 label {
@@ -183,9 +230,9 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 2px solid #00bfa5;
+    outline: 2px solid var(--color-primary);
     outline-offset: 2px;
-    border-color: #00bfa5;
+    border-color: var(--color-primary);
     background: #ffffff;
 }
 
@@ -200,7 +247,7 @@ input[type="submit"] {
     padding: 0.6rem 1.4rem;
     border-radius: 999px;
     border: none;
-    background: #00bfa5;
+    background: var(--color-primary);
     color: #ffffff;
     font-weight: 600;
     letter-spacing: 0.06em;
@@ -212,9 +259,14 @@ button:hover,
 button:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-    background: #009480;
+    background: var(--color-primary-dark);
 }
 
+
+
+/* =========================================================
+   8. COMPONENTS — NANNY CARD
+   ========================================================= */
 .nanny-card {
     border-radius: 16px;
     border: 1px solid #c4e4e4;
@@ -231,9 +283,14 @@ input[type="submit"]:focus {
 
 .nanny-card span {
     font-size: 1rem;
-    color: #00bfa5;
+    color: var(--color-primary);
 }
 
+
+
+/* =========================================================
+   9. MISC ELEMENTS (dl, dt, dd, pre)
+   ========================================================= */
 dl {
     margin: 0.5rem 0 0;
 }
@@ -241,7 +298,7 @@ dl {
 dt {
     font-weight: 600;
     margin-top: 0.5rem;
-    color: #005461;
+    color: var(--color-heading);
 }
 
 dd {
@@ -257,9 +314,14 @@ pre {
     font-size: 0.9rem;
 }
 
+
+
+/* =========================================================
+   10. FOOTER
+   ========================================================= */
 footer {
-    border-top: 2px solid #007d85;
-    background: #ffffff;
+    border-top: 2px solid var(--color-header-border);
+    background: var(--color-section-bg);
     padding: 1.25rem 1rem 1.75rem;
     text-align: center;
     font-size: 0.9rem;
@@ -270,6 +332,11 @@ footer a {
     font-weight: 500;
 }
 
+
+
+/* =========================================================
+   11. MEDIA QUERIES
+   ========================================================= */
 @media (min-width: 720px) {
     header {
         padding: 0.75rem 1.5rem 1rem;
