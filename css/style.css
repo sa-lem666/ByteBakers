@@ -365,3 +365,8 @@ footer a {
         padding-top: 2.25rem;
     }
 }
+
+/*===========MAP SIZING=================*/
+#map{
+    width: 100%;
+}
